@@ -1,10 +1,13 @@
-# Nombre del laboratorio 
+# Práctica 1.1. ¿Qué es una Red? / Caso de estudio
 
 ## Objetivo de la práctica:
-Al finalizar la práctica, serás capaz de:
-- Objetivo1
-- Objetivo2
-- Objetivo3
+El participante, lograra comprender las características generales de una red de comunicaciones  
+
+Al finalizar la práctica, serás capaz de: 
+
+- Comprender el concepto de una red  
+- Identificara los componentes que mas  
+- Visualizar las funciones básicas de una red  
 
 ## Objetivo Visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
@@ -16,7 +19,7 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 
 ## Tabla de ayuda:
 Agregar una tabla con la información que pueda requerir el participante durante el laboratorio, como versión de software, IPs de servers, usuarios y credenciales de acceso.
-| Contraseña | Correo | Código |
+| Dispositivo | Características | Dirección/Contraseña | Credenciales |
 | --- | --- | ---|
 | Netec2024 | edgardo@netec.com | 123abc |
 
