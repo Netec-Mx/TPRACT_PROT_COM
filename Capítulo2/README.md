@@ -33,7 +33,7 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 ## Instrucciones 
 Vamos a identificar los elementos de la Arquitectura de red empresarial en la red que ya tenemos funcionando.
 
-### Tarea 1. Descripción de la tarea a realizar.
+### Tarea 1. Identifica las capas de la Arquitectura de red empresarial en tu topología.
 Paso 1. Analiza de forma visual los dispositivos disponibles y trata de responder las siguientes preguntas.
 
 ![imagen](../Imagenes/Práctica2/2_2.png)
@@ -42,9 +42,8 @@ Paso 1. Analiza de forma visual los dispositivos disponibles y trata de responde
 - *¿Qué dispositivos corresponden a la capa de distribución?* 
 - *¿Logras identificar que dispositivo o dispositivos corresponden a la capa de núcleo?, ¿por qué?* 
 
-### Tarea 2. 
+### Tarea 2. Ahora Tomando en cuenta el modelo de referencia OSI y TCP/IP verifica los elementos correspondientes a la capa 1 y 2 o Tomando en cuenta en Stack TCP /IP  loe elementos correspondientes a la capa de enlace (link). 
 
-Tomando en cuenta el modelo de referencia OSI y TCP/IP verifica los elementos correspondientes a la capa 1 y 2, o tomando en cuenta en Stack TCP/IP  loe elementos correspondientes a la capa de enlace (link). 
 
 Paso 1. Ingresa el `swicth ASW-M&V`, pasa a modo de Exec Privilegiado y ejecuta el comando `show ip int brief` como se muestra en la imagen.
 
@@ -74,9 +73,8 @@ Como podrás notar el switch a creado la tabla MAC con el paso de información a
 
 > Nota: Las MAC pueden llegar a ser diferentes. 
 
-### Tarea 3.  
+### Tarea 3. Ahora Tomando en cuenta el modelo de referencia OSI y TCP/IP verifica los elementos correspondientes a la capa 3 o Tomando en cuenta en Stack TCP /IP  loe elementos correspondientes a la capa de Internet. 
 
-Tomando en cuenta el modelo de referencia OSI y TCP/IP, verifica los elementos correspondientes a la capa 3, o tomando en cuenta Stack TCP /IP,  los elementos correspondientes a la capa de Internet. 
 
 Paso 1. Como habrás notado necesitamos direccionamiento de capa 2 y capa 3 para enviar y recibir información a través de la red. Verifica el direccionamiento IP (capa 3 en la PC 1) usando en la consola el comando `ipconfig /all` como se muestra en la imagen:  
 
