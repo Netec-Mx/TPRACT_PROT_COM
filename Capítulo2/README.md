@@ -46,7 +46,7 @@ Paso 1. Analiza de forma visual los dispositivos disponibles y trata de responde
 
 Tomando en cuenta el modelo de referencia OSI y TCP/IP verifica los elementos correspondientes a la capa 1 y 2, o tomando en cuenta en Stack TCP/IP  loe elementos correspondientes a la capa de enlace (link). 
 
-Paso 1. Ingresa el `swicth ASW-M&V`, pasa a modo de Exec Privilegiado y ejecuta el comando **show ip int brief** como se muestra en la imagen.
+Paso 1. Ingresa el `swicth ASW-M&V`, pasa a modo de Exec Privilegiado y ejecuta el comando `show ip int brief` como se muestra en la imagen.
 
 ![imagen](../Imagenes/Práctica2/2_3.png)
 
@@ -70,9 +70,9 @@ Puedes corroborar las direcciones MAC como se muestra en la imagen.
 
 ![imagen](../Imagenes/Práctica2/2_7.png)
 
-Como podrás notar el switch a creado la tabla MAC con el paso de información a través de sus puertos, y ahora sabe que la dirección MAC 00D0.D362.61CA ( PC 1) la logra alcanzar a través de la interface Fa0/10 y que la MAC 0003.e473.ea02 la puede alcanzar a través de sus interfaces G0/1. 
+Como podrás notar el switch a creado la tabla MAC con el paso de información a través de sus puertos, y ahora sabe que la dirección **MAC 00D0.D362.61CA** (PC 1) la logra alcanzar a través de la interface **Fa0/10** y que la **MAC 0003.e473.ea02** la puede alcanzar a través de sus interfaces **G0/1**. 
 
-Nota: Las MAC pueden llegar a ser diferentes. 
+> Nota: Las MAC pueden llegar a ser diferentes. 
 
 ### Tarea 3.  
 
