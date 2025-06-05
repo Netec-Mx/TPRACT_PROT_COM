@@ -18,6 +18,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Tabla de ayuda:
 
++++
 ![tabladeayuda1](../images/2.png)
 
 ![tabladeayuda2](../images/3.png)
