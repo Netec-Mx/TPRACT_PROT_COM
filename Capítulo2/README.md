@@ -41,7 +41,7 @@ Paso 1. Ingresa a el swicth ASW-M&V, pasa a modo de Exec Privilegiado y ejecuta 
 
 Este comando te muestra el estado de las interfaces a nivel físico y lógico es decir a nivel decapa 1 y capa 2. Por ejemplo, compara las interfaces FastEthernet 0/10 y FastEthernet 0/11. 
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_4.png)
 
 Como podrás ver la interface FastEthernet 0/10 tiene un estado UP UP es decir esta activa y lista para reenviar información, mientras que la interface FastEthernet 0/11, esta down down, es decir esta inactiva no podría reenviar información. 
 
