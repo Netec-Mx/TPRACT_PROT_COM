@@ -3,7 +3,7 @@
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
 - Simular la implementación de una topología de red en Cisco Packet Tracert.  
-- Realizar la configuración básica los equipos de red básicos.  
+- Realizar la configuración básica de los equipos de red básicos.  
 - Realizar la configuración de un protocolo ruteable y uno re ruteo.  
 
 ## Objetivo Visual 
@@ -37,31 +37,31 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 
 ### Tarea 1.  
 
-Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan 
+Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan. 
 
-Paso 1. Tomando en cuenta la arquitectura de red empresarial vamos construir de la capa de acceso de nuestra topología, en la parte  inferior izquierda da clic en el icono del switch y arrastra tres Swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triangulo.  
+Paso 1. Tomando en cuenta la Arquitectura de red empresarial vamos construir la capa de acceso de nuestra topología. En la parte inferior izquierda da clic en el icono del switch y arrastra tres Swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triángulo.  
 
 ![imagen](../Imagenes/Práctica3/3_2.png)
 
-Posteriormente procede a cablear los quipos, en la parte inferior izquierda encontraras un icono muy similar a un “rayo”, da clic en el y encontraras los cables disponibles, selecciona el cable crossover conéctalos como se muestra en la imagen.  
+Posteriormente, procede a cablear los quipos. En la parte inferior izquierda encontraras un icono muy similar a un “rayo”, da clic en él y encontraras los cables disponibles. Selecciona el cable crossover y conéctalos como se muestra en la imagen:  
 
 ![imagen](../Imagenes/Práctica3/3_3.png)
 
-Ahora vamos a repetir los pasos anteriores pero en esta ocasión con PCs ( tres por cada switch que este en la parte inferior) como se muestra en la imagen  
+Ahora, vamos a repetir los pasos anteriores, pero en esta ocasión con PCs (tres por cada switch que este en la parte inferior) como se muestra en la imagen:  
 
-Nota Procura usar los puertos Fa0/5 a Fa0/8 y utiliza cables Straight-Trough, y en las PC se debe de conectar en los puertos FastEthernet0 
+> Nota: Procura usar los puertos Fa0/5 a Fa0/8 y utiliza cables Straight-Trough. En las PC se debe de conectar en los puertos FastEthernet0.
 
 ![imagen](../Imagenes/Práctica3/3_4.png)
 
-Paso 2. Tomando en cuenta la arquitectura de red empresarial, vamos a construir la capa de distribución, en la parte inferior izquierda da clic en el icono de routers, y  con el ratón selecciona un router 2911, y arrástralo a tu topología como se muestra en la imagen  
+Paso 2. Tomando en cuenta la Arquitectura de red empresarial, vamos a construir la capa de distribución. En la parte inferior izquierda, da clic en el icono de routers, con el ratón selecciona un router 2911 y arrástralo a tu topología como se muestra en la imagen. 
 
 ![imagen](../Imagenes/Práctica3/3_5.png)
 
-Ahora hay que cablearlo, selecciona un cable Straight-Trough, para conectar de la interfaz G0/1 del switch a la interface G0/1 del router, depues usa un cable Cross-over para conectar de la interface G0/2 del Router que acabas de colocar a la interface G0/2 del router RTR-IND-1, debería de verse como la siguiente imagen  
+Ahora debes clablearlo. Selecciona un cable Straight-Trough para conectarlo de la interfaz G0/1 del switch a la interface G0/1 del router. Después usa un cable Cross-over para conectarlo de la interface G0/2 del router que acabas de colocar a la interface G0/2 del router RTR-IND-1, debería de verse como la siguiente imagen:  
 
 ![imagen](../Imagenes/Práctica3/3_6.png)
 
-Paso 3. Una vez que  ya está esta tu topología completa, posiciónate en el swicth que esta en la “punta del triángulo” ve a modo exec privilegiado y ejecuta el comando show cdp neighbors, y analízalo junto a tu instructor  
+Paso 3. Una vez que ya está tu topología completa, posiciónate en el swicth que esta en la “punta del triángulo” ve a modo Exec privilegiado y ejecuta el comando show cdp neighbors, y analízalo junto a tu instructor.  
 
 ![imagen](../Imagenes/Práctica3/3_7.png)
 
