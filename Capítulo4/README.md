@@ -38,8 +38,7 @@ Hasta este punto ya tenemos conectividad completa en nuestra nueva red, pero sol
 
 ## Instrucciones 
 
-### Tarea 1. 
-En primero lugar configuraremos un protocolo  muy popular llamado DHCP que asignara direccionamiento IP a nuestros dispositivos finales como. 
+### Tarea 1. En primero lugar configuraremos un protocolo  muy popular llamado DHCP que asignara direccionamiento IP a nuestros dispositivos finales como. 
 
 Paso 1. Ingresa a el router RTR-OFFICE y configura DHCP en modo de configuración global como se muestra en la imagen.  
 
@@ -59,8 +58,7 @@ Como veras ya tienes control de los dispositivos de IoT, comprobando que ya tene
 
 ![imagen](../Imagenes/Práctica4/4_5.png)
 
-### Tarea 2. 
-La administración del tiempo es importante para que una red funcione de forma óptima, el que los dispositivos estén sincronizados en cuanto a fecha y hora es necesarios para las estampas de tiempo, actualizaciones etc, por lo que configuraremos NTP ( Network Time Protocol) 
+### Tarea 2. La administración del tiempo es importante para que una red funcione de forma óptima, el que los dispositivos estén sincronizados en cuanto a fecha y hora es necesarios para las estampas de tiempo, actualizaciones etc, por lo que configuraremos NTP ( Network Time Protocol) 
 
 Paso 1. Ingresa al servidor  SER-DHCP IoT , en la pestaña de Services y en el menú de Services selecciona NTP y configura el servicio de NTP con la  hora actual, como se muestra en la imagen. 
 
