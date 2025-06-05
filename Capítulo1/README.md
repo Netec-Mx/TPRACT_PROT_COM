@@ -9,8 +9,7 @@ Al finalizar la práctica, serás capaz de:
 - Identificara los componentes que mas  
 - Visualizar las funciones básicas de una red  
 
-## Objetivo Visual 
-Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
+## Objetivo visual 
 
 ![diagrama1](../images/1.png)
 
@@ -19,9 +18,9 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 
 ## Tabla de ayuda:
 
-![tabladeayuda1](../)
+![tabladeayuda1](../images/2.png)
 
-![tabladeayuda2](../)
+![tabladeayuda2](../images/3.png)
 
 ## Instrucciones 
 
@@ -30,7 +29,7 @@ En esta actividad observaras como está conformada una red de comunicaciones bá
 ### Tarea 1. Analicemos los componentes de una red y veamos como trabaja 
 Paso 1. Abre tu practica en formato Cisco Packet Tracert  y lo primero que veras es una red, esta red ya esta interconectada, configurada y funcional.
 
-![diagrama](../)
+![diagrama](../images/4.png)
 
 -	¿Reconoces alguno de estos dispositivos?
 -	¿Has utilizado alguno de ellos?
@@ -38,13 +37,66 @@ Paso 1. Abre tu practica en formato Cisco Packet Tracert  y lo primero que veras
 
 Paso 2. Da clic sobre la Tablet, y da clic en Web Browser, se abrirá un explorador donde en la barra URL ingresa la  dirección IP 10.10.50.20, posteriormente te solicitará un loggin, ingresa  admin como usuario y cisco1234! como contraseña, finalmente da clic en el botón Sing in
 
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
+![imagen](../images/5.png)
 
-Paso 2. <!-- Añadir instrucción -->
+Paso 3. Una vez que te logueaste correctamente podrás ver una lista de dispositivos, estos dispositivos son dispositivos IoT, con distintas funciones. Por ejemplo despliega a IoT1-FAN_PRODUCCION (PTT0810D43P-),y experimeta con las opciones (Low y Hight)
 
-Paso 3. <!-- Añadir instrucción -->
+![imagen](../images/6.png)
+
+Como puedes observar lo estamos controlando a través de la red, lo mismo ocurre con los demás dispositivos IoT, recuerda que son objetos físicos que están conectados a internet y pueden recoger, enviar o recibir datos mediante sensores, software y otras tecnologías. Estos dispositivos pueden operar de forma autónoma o ser controlados a distancia, y están diseñados para mejorar la eficiencia, automatizar tareas y proporcionar información útil en tiempo real, y esto es posible gracias a una red de comunicaciones
+
+Paso 4. Trata de repetir las instrucciones de los pasos 2 y 3 pero ahora desde PC1.
+
+![imagen](../images/7.png)
+
+¿Lograste manipular los dispositivos IoT? Esto se debe a la comunicación de la red.
+
+### Tarea 2. Analizar las características de los dispositivos de red.
+Paso 1. Ingresa al switch ASW-IND-1, asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
+
+![imagen](../images/8.png)
+
+Características de un switch:
+- Se dice que un  swicth trabaja a nivel de capa 2.
+- Es un dispositivo de acceso.
+- Tiene alta densidad de puertos.
+- Divide dominios de colisión.
+
+> Nota: Si algunos de estos términos no te son familiares, no te preocupes, hablaremos de ellos más adelante.
+
+Paso 2. Ingresa al router RTR-IND-2, asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
+
+![imagen](../images/9.png)
+
+Características de un Router: 
+- Se dice que trabaja a nivel de capa 3
+- Es un dispositivo de distribución.
+- Menos densidad de puestos en comparación con switch.
+- Divide dominios de Broadcast 
+
+> Nota: Si algunos de estos términos no te son familiares, no te preocupes, hablaremos de ellos más adelante.
+
+### Tarea 3. Analiza como viaja la información.
+Paso 1: En la interface de Cisco Packer Tracer, ubica en la esquina inferior derecha el icono se Simulation, da clic, aparecerá una ventana llamada Simulation panel.
+
+Paso 1: En la interface de Cisco Packer Tracer, ubica en la esquina inferior derecha el icono se Simulation, da clic, aparecerá una ventana llamada Simulation panel.
+
+![imagen](../images/10.png)
+
+Paso 2. Una vez que puedas ver el Simulation Panel, ingresa a la PC1 y envía un ping a la dirección 10.10.50.20  con el comando ping 10.10.50.20 y luego presiona la tecla enter
+
+![imagen](../images/11.png)
+
+Paso 3. Regresa a el Sumulation Panel  y en la sección de Play control, da clic en el icono de play, podrás observar de forma gráfica como viajan los paquetes a lo largo de la red
+
+![imagen](../images/12.png)
+
+Paso 4. Puede pausar la trayectoria de los paquetes desde la sección de play Controls en el Simulation Panel, da clic en alguno de los paquetes y visualiza la información que ofrece  las pestañas OSI Model, Inbound PDU Details  y Outbound PDU Details.
+
+![imagen](../images/13.png)
+
+¿Alguna de esta información se te hace familiar?
+
 
 ### Resultado esperado
-En esta sección, se debe mostrar el resultado esperado de nuestro laboratorio
-![imagen resultado](../images/img3.png)
+Como puedes ver una red de comunicaciones se conforma varios dispositivos que estarán interconectados entre sí, compartirán información para lograr que se ejecuten algunas acciones, estas acciones dependerán del por que o para que fue diseñada la red y lo que se este transportando, y todo esto no sería posible sin la interacción de un protocolo de comunicación. 
