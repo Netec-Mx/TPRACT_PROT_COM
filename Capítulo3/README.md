@@ -104,4 +104,4 @@ Capa 3: IP , EIGRP
 
 Y también pueden identificar algunas topologías implementas como estrella y anillo  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_15.png)
