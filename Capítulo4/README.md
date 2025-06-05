@@ -1,107 +1,90 @@
-# Práctica 1.4. Protocolos y servicios de red 
+# Práctica 1.4. Protocolos y servicios de red
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
-- Simular la implementación de una topología de red en Cisco Packet Tracert.  
-- Realizar la configuración básica los equipos de red básicos.  
-- Realizar la configuración de un protocolo ruteable y uno re ruteo.  
 
-## Objetivo Visual 
+- Configuración del direccionamiento IP en los dispositivos finales de forma dinámica 
+- Implementar NTP para garantizar los servicios de tiempo en los dispositivos de red 
+- implementación de syslog para garantizar tener la información adecuada en una   auditoria de red
+
+## Objetivo visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
 
-![diagrama1](../images/img1.png)
+![imagen](../)
 
 ## Duración aproximada:
-- 40 minutos.
+- 20 minutos.
 
 ## Tabla de ayuda:
 
+Hasta este punto ya tenemos conectividad completa en nuestra nueva red, pero solo a nivel de dispositivos de red, por lo que implementaremos algunos protocolos para garantizar que también los dispositivos finales puedan comunicarse  
 
 ## Instrucciones 
 
-### Tarea 1.  
+### Tarea 1. 
+En primero lugar configuraremos un protocolo  muy popular llamado DHCP que asignara direccionamiento IP a nuestros dispositivos finales como. 
 
-Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan 
-
-Paso 1. Tomando en cuenta la arquitectura de red empresarial vamos construir de la capa de acceso de nuestra topología, en la parte  inferior izquierda da clic en el icono del switch y arrastra tres Swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triangulo.  
-
-![imagen](../)
-
-Posteriormente procede a cablear los quipos, en la parte inferior izquierda encontraras un icono muy similar a un “rayo”, da clic en el y encontraras los cables disponibles, selecciona el cable crossover conéctalos como se muestra en la imagen.  
+Paso 1. Ingresa a el router RTR-OFFICE y configura DHCP en modo de configuración global como se muestra en la imagen.  
 
 ![imagen](../)
 
-Ahora vamos a repetir los pasos anteriores pero en esta ocasión con PCs ( tres por cada switch que este en la parte inferior) como se muestra en la imagen  
-
-Nota Procura usar los puertos Fa0/5 a Fa0/8 y utiliza cables Straight-Trough, y en las PC se debe de conectar en los puertos FastEthernet0 
+Paso 2.  Hora a las PC y configurarla para recibir información del protocolo IP mediante DHCP 
 
 ![imagen](../)
 
-Paso 2. Tomando en cuenta la arquitectura de red empresarial, vamos a construir la capa de distribución, en la parte inferior izquierda da clic en el icono de routers, y  con el ratón selecciona un router 2911, y arrástralo a tu topología como se muestra en la imagen  
+Como podrás ver, casi de forma inmediata adquieren su dirección IP, mascara de subred y default Gateway. 
+
+Paso 3. De forma muy básica ya puedes tener acceso a las aplicaciones de red como la administración de los dispositivos de IoT, para comprobarlo, en cualquiera de las PC que ya cuentan con direccionamiento IP abre un explorador e ingresa la IP 10.10.50.20 e ingresa las credenciales user:admin   password: cisco1234! 
 
 ![imagen](../)
 
-Ahora hay que cablearlo, selecciona un cable Straight-Trough, para conectar de la interfaz G0/1 del switch a la interface G0/1 del router, depues usa un cable Cross-over para conectar de la interface G0/2 del Router que acabas de colocar a la interface G0/2 del router RTR-IND-1, debería de verse como la siguiente imagen  
+Como veras ya tienes control de los dispositivos de IoT, comprobando que ya tenemos conectividad completa  
 
 ![imagen](../)
 
-Paso 3. Una vez que  ya está esta tu topología completa, posiciónate en el swicth que esta en la “punta del triángulo” ve a modo exec privilegiado y ejecuta el comando show cdp neighbors, y analízalo junto a tu instructor  
+### Tarea 2. 
+La administración del tiempo es importante para que una red funcione de forma óptima, el que los dispositivos estén sincronizados en cuanto a fecha y hora es necesarios para las estampas de tiempo, actualizaciones etc, por lo que configuraremos NTP ( Network Time Protocol) 
+
+Paso 1. Ingresa al servidor  SER-DHCP IoT , en la pestaña de Services y en el menú de Services selecciona NTP y configura el servicio de NTP con la  hora actual, como se muestra en la imagen. 
 
 ![imagen](../)
 
-CDP es un protocolo de capa 2 que ofrece información de los dispositivos directamente conectados, sin embargo, sin una configuración apropiada, esta información pudiera llegara a ser confusa, por ejemplo nos muestra que esta conectado a dos dispositivos llamados switch, es decir por el momento todos se llaman switch 
-
-### Tarea 2. Configuración básica de los dispositivos de capa 2 ( switches). 
-
-Paso 1. deberás configurar los parámetros básicos en los swicthes como  se muestra en la imagen  
+Paso 2. Ahora  ve al router RTR-OFFICE, y verifica la hora actual del dispositivos con el comando show clock en modo Exec Privilegiado y verifica la hora con la que esta configurado el dispositivo como  se muestra en la imagen 
 
 ![imagen](../)
 
-Paso 2. Ahora regresa cona la consola de ahora llamado ASW-3 e ingresa nuevamente el comando show cdp neighbors y observa la diferencia  
+Paso 3. Ahora ingresa al modo de configuración global y configura el servicio de NTP como se muestra en la imagen  
 
 ![imagen](../)
 
-¿Ahora ves la diferencia?, sin embargo, aún no logramos ver al router que esta directamente conectado, se debe a que aun no esta configurado. 
+Nota: deberás esperar alrededor de 5 minutos para ver  una actualización, mientras puedes seguir con la siguiente tarea  
 
-Paso 3. Ingresa a la consola del router que añadiste en esta actividad y configúralo como se muestra en la imagen. 
+Tarea 3:  A veces es necesario saber la historia de ciertos eventos, el recopilar información, sobre lo que ocurre en la red es importante, por lo que ahora vamos a configurar el protocolo syslog para almacenar de forma centralizada los mensajes no solicitados  
 
-![imagen](../)
-
-Puedes comprobar la eficacia de tus configuraciones con un ping, desde el ahora router RTR-OFFICE pueden enviar un ping a los switches  
+Paso 1. Ingresa nuevamente al router RTR-OFFICE, de ahí navega hasta el modo de configuración global y configura syslog como se muestra en la imagen  
 
 ![imagen](../)
 
-¿Puedes decir que otros protocolos están presentes en la red que acabas de configurar? Corrobóralo con tu instructor  
-
- 
-### Tarea 3.  
-
-En esencia ya tenemos comunicación local entre los dispositivos de red que recién agregamos a nuestra topología, ahora hay que hacer que exista comunicación entre la nueva red y la existente. 
-
-Paso 1 Ingresa al router RTR-OFFICE y ejecuta el comando show ip route desde el modo Exec Privilegiado y analiza la salida  
+Paso 2. Ahora simula una falla en tu red, ingresa a la interface  G0/1 y  apaga la interface con el comando shutdown, veremos como aparecen una mensajes indicando lo ocurrido.
 
 ![imagen](../)
 
-Como puedes ver, el router nuevo, no conce como llegar a las redes remotas, solo conoce las redes que tienen directamente conectadas, por lo tanto hay que hacer que aprenda, o en este caso los demás routers le enseñen como llegar  a las demás redes. 
-
-Paso 2. Ingresa al router RTR-OFFICE ingresa al modo de configuración global  y configura el protocolo EIGRP  como se muestra en la imagen  
+Paso 3. Ahora ve al servidor SER-DHCP-IoT en la pestaña de Services, selecciona SYSLOG, y podrás ver como se almacenaron los log en el servidor, también puedes notar que tienen su estampa de tiempo acorde a la hora actual  
 
 ![imagen](../)
 
-Posteriormente ingresa nuevamente el comando show ip route desde el modo de exec privilegiado y ve la diferencia  
-
-![imagen](../)
-
-Como puedes observar ahora conoce todas las demás redes  
+Puedes encender de nuevo la interface G0/1 con el comando no shutdown y veras como se incrementan los logs en el servidor  
 
 ### Resultado esperado 
 
-Hasta ahora, puedes observar como los protocolos de diferentes copas comienzan a darle vida a tu red, algunos protocolos que podemos ver presentes en este punto son  
+Comprender la diferencia y aplicación entre los diferentes protocolos existentes en una red: 
 
-Capa 2: CDP,  STP 
+Protocolo Ruteables  
 
-Capa 3: IP , EIGRP 
+Protocolos de ruteo 
 
-Y también pueden identificar algunas topologías implementas como estrella y anillo  
+Protocolos de administración  
 
-![imagen](../)
+Comprender la importancia de las implementaciones centralizadas en la implementación y administración de una red  
+
+ 
