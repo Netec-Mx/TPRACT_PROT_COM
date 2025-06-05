@@ -3,9 +3,9 @@
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
 
-- Configuración del direccionamiento IP en los dispositivos finales de forma dinámica 
-- Implementar NTP para garantizar los servicios de tiempo en los dispositivos de red 
-- implementación de syslog para garantizar tener la información adecuada en una   auditoria de red
+- Configurar del direccionamiento IP en los dispositivos finales de forma dinámica. 
+- Implementar NTP para garantizar los servicios de tiempo en los dispositivos de red. 
+- Implementar syslog para garantizar la conservación de la información adecuada en una auditoria de red.
 
 ## Objetivo visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
@@ -34,28 +34,31 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 | RTR-OFFICE       | Router / Default Gateway / (Distribución) | G0/1: 192.168.1.1/24<br>G0/2: 192.168.1.2/24                                         | N/A                                         |
 
 
-Hasta este punto ya tenemos conectividad completa en nuestra nueva red, pero solo a nivel de dispositivos de red, por lo que implementaremos algunos protocolos para garantizar que también los dispositivos finales puedan comunicarse  
+Hasta este punto ya tenemos conectividad completa en nuestra nueva red, pero solo a nivel de dispositivos de red, por lo que implementaremos algunos protocolos para garantizar que también los dispositivos finales puedan comunicarse.  
 
 ## Instrucciones 
 
-### Tarea 1. 
-En primero lugar configuraremos un protocolo  muy popular llamado DHCP que asignara direccionamiento IP a nuestros dispositivos finales como. 
+### Tarea 1. Configurar el protocolo DHCP para asignar el direccionamiento IP a los dispositivos finales.
 
-Paso 1. Ingresa a el router RTR-OFFICE y configura DHCP en modo de configuración global como se muestra en la imagen.  
+Paso 1. Ingresa a el router **RTR-OFFICE** y configura DHCP en modo de configuración global como se muestra en la imagen:  
 
 ![imagen](../Imagenes/Práctica4/4_2.png)
 
-Paso 2.  Hora a las PC y configurarla para recibir información del protocolo IP mediante DHCP 
+Paso 2. Configura las PC para recibir información del protocolo IP mediante DHCP. 
 
 ![imagen](../Imagenes/Práctica4/4_3.png)
 
-Como podrás ver, casi de forma inmediata adquieren su dirección IP, mascara de subred y default Gateway. 
+Como podrás ver, casi de forma inmediata adquieren su dirección IP, máscara de subred y default Gateway. 
+De forma muy básica ya puedes tener acceso a las aplicaciones de red como la administración de los dispositivos de IoT.
 
-Paso 3. De forma muy básica ya puedes tener acceso a las aplicaciones de red como la administración de los dispositivos de IoT, para comprobarlo, en cualquiera de las PC que ya cuentan con direccionamiento IP abre un explorador e ingresa la IP 10.10.50.20 e ingresa las credenciales user:admin   password: cisco1234! 
+Paso 3. Para comprobarlo, en cualquiera de las PC que ya cuentan con direccionamiento IP, abre un explorador e ingresa la **IP 10.10.50.20** y las credenciales 
+
+- User:admin
+- Password: cisco1234! 
 
 ![imagen](../Imagenes/Práctica4/4_4.png)
 
-Como veras ya tienes control de los dispositivos de IoT, comprobando que ya tenemos conectividad completa  
+Como veras ya tienes control de los dispositivos de IoT, comprobando que ya tenemos conectividad completa.  
 
 ![imagen](../Imagenes/Práctica4/4_5.png)
 
