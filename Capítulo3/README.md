@@ -35,9 +35,7 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 
 ## Instrucciones 
 
-### Tarea 1.  
-
-Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan. 
+### Tarea 1.  Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan. 
 
 Paso 1. Tomando en cuenta la Arquitectura de red empresarial vamos construir la capa de acceso de nuestra topología. En la parte inferior izquierda da clic en el icono del switch y arrastra tres Swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triángulo.  
 
@@ -90,9 +88,7 @@ Puedes comprobar la eficacia de tus configuraciones con un ping, desde el ahora 
 ¿Puedes decir que otros protocolos están presentes en la red que acabas de configurar? Corrobóralo con tu instructor  
 
  
-### Tarea 3.  
-
-En esencia ya tenemos comunicación local entre los dispositivos de red que recién agregamos a nuestra topología, ahora hay que hacer que exista comunicación entre la nueva red y la existente. 
+### Tarea 3.  En esencia ya tenemos comunicación local entre los dispositivos de red que recién agregamos a nuestra topología, ahora hay que hacer que exista comunicación entre la nueva red y la existente. 
 
 Paso 1 Ingresa al router RTR-OFFICE y ejecuta el comando show ip route desde el modo Exec Privilegiado y analiza la salida  
 
