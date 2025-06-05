@@ -4,7 +4,7 @@
 Al finalizar la práctica, serás capaz de:
 - Simular la implementación de una topología de red en Cisco Packet Tracert.  
 - Realizar la configuración básica de los equipos de red básicos.  
-- Realizar la configuración de un protocolo ruteable y uno re ruteo.  
+- Realizar la configuración de un protocolo ruteable y uno de re ruteo.  
 
 ## Objetivo Visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
@@ -35,15 +35,14 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 
 ## Instrucciones 
 
-### Tarea 1.  
+### Tarea 1. Agregar los dispositivos que darán forma a nuestra red. 
 
-Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan. 
-
-Paso 1. Tomando en cuenta la Arquitectura de red empresarial vamos construir la capa de acceso de nuestra topología. En la parte inferior izquierda da clic en el icono del switch y arrastra tres Swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triángulo.  
+Paso 1. Tomando en cuenta la arquitectura de red empresarial vamos construir la capa de acceso de nuestra topología. En la parte inferior izquierda da clic en el icono del switch y arrastra tres swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triángulo.  
 
 ![imagen](../Imagenes/Práctica3/3_2.png)
 
-Posteriormente, procede a cablear los quipos. En la parte inferior izquierda encontraras un icono muy similar a un “rayo”, da clic en él y encontraras los cables disponibles. Selecciona el cable crossover y conéctalos como se muestra en la imagen:  
+Cablea los equipos. 
+En la parte inferior izquierda encontraras un icono muy similar a un “rayo”, da clic en él y encontraras los cables disponibles. Selecciona el cable crossover y conéctalos como se muestra en la imagen:  
 
 ![imagen](../Imagenes/Práctica3/3_3.png)
 
@@ -53,71 +52,71 @@ Ahora, vamos a repetir los pasos anteriores, pero en esta ocasión con PCs (tres
 
 ![imagen](../Imagenes/Práctica3/3_4.png)
 
-Paso 2. Tomando en cuenta la Arquitectura de red empresarial, vamos a construir la capa de distribución. En la parte inferior izquierda, da clic en el icono de routers, con el ratón selecciona un router 2911 y arrástralo a tu topología como se muestra en la imagen. 
+Paso 2. Construye la capa de distribución. 
+En la parte inferior izquierda, da clic en el icono de routers, con el ratón selecciona un router 2911 y arrástralo a tu topología como se muestra en la imagen. 
 
 ![imagen](../Imagenes/Práctica3/3_5.png)
 
-Ahora debes clablearlo. Selecciona un cable Straight-Trough para conectarlo de la interfaz G0/1 del switch a la interface G0/1 del router. Después usa un cable Cross-over para conectarlo de la interface G0/2 del router que acabas de colocar a la interface G0/2 del router RTR-IND-1, debería de verse como la siguiente imagen:  
+Ahora debes clablearlo. Selecciona un cable **Straight-Trough** para conectarlo de la interfaz G0/1 del switch a la interface G0/1 del router. Después usa un cable Cross-over para conectarlo de la interface G0/2 del router que acabas de colocar a la interface G0/2 del router RTR-IND-1, debería de verse como la siguiente imagen:  
 
 ![imagen](../Imagenes/Práctica3/3_6.png)
 
-Paso 3. Una vez que ya está tu topología completa, posiciónate en el swicth que esta en la “punta del triángulo” ve a modo Exec privilegiado y ejecuta el comando show cdp neighbors, y analízalo junto a tu instructor.  
+Paso 3. Una vez que ya está tu topología completa, posiciónate en el swicth que esta en la *“punta del triángulo”*, ve a modo Exec privilegiado y ejecuta el comando `show cdp neighbors`, y analízalo junto a tu instructor.  
 
 ![imagen](../Imagenes/Práctica3/3_7.png)
 
-CDP es un protocolo de capa 2 que ofrece información de los dispositivos directamente conectados, sin embargo, sin una configuración apropiada, esta información pudiera llegara a ser confusa, por ejemplo nos muestra que esta conectado a dos dispositivos llamados switch, es decir por el momento todos se llaman switch 
+CDP es un protocolo de capa 2 que ofrece información de los dispositivos directamente conectados, sin embargo, sin una configuración apropiada, esta información puede llegar a ser confusa. Por ejemplo, nos muestra que está conectado a dos dispositivos llamados switch, es decir por el momento todos se llaman switch. 
 
 ### Tarea 2. Configuración básica de los dispositivos de capa 2 ( switches). 
 
-Paso 1. deberás configurar los parámetros básicos en los swicthes como  se muestra en la imagen  
+Paso 1. Configura los parámetros básicos en los swicthes como se muestra en la imagen:  
 
 ![imagen](../Imagenes/Práctica3/3_8.png)
 
-Paso 2. Ahora regresa cona la consola de ahora llamado ASW-3 e ingresa nuevamente el comando show cdp neighbors y observa la diferencia  
+Paso 2. Regresa a la consola, ahora llamada ASW-3, e ingresa nuevamente el comando `show cdp neighbors` y observa la diferencia.  
 
 ![imagen](../Imagenes/Práctica3/3_9.png)
 
-¿Ahora ves la diferencia?, sin embargo, aún no logramos ver al router que esta directamente conectado, se debe a que aun no esta configurado. 
+¿Ahora ves la diferencia? 
+Aún no logramos ver al router que esta directamente conectado, se debe a que aún no esta configurado. 
 
-Paso 3. Ingresa a la consola del router que añadiste en esta actividad y configúralo como se muestra en la imagen. 
+Paso 3. Ingresa a la consola del router que añadiste en esta actividad y configúralo como se muestra en la imagen: 
 
 ![imagen](../Imagenes/Práctica3/3_10.png)
 
-Puedes comprobar la eficacia de tus configuraciones con un ping, desde el ahora router RTR-OFFICE pueden enviar un ping a los switches  
+Puedes comprobar la eficacia de tus configuraciones con un ping. Desde el ahora router **RTR-OFFICE** pueden enviar un ping a los switches.
 
 ![imagen](../Imagenes/Práctica3/3_11.png)
 
-¿Puedes decir que otros protocolos están presentes en la red que acabas de configurar? Corrobóralo con tu instructor  
+¿Puedes decir que otros protocolos están presentes en la red que acabas de configurar? Corrobóralo con tu instructor.  
 
  
-### Tarea 3.  
+### Tarea 3. Generar comunicación entre las redes.
 
-En esencia ya tenemos comunicación local entre los dispositivos de red que recién agregamos a nuestra topología, ahora hay que hacer que exista comunicación entre la nueva red y la existente. 
+En esencia, ya tenemos comunicación local entre los dispositivos de red que recién agregamos a nuestra topología, ahora hay que hacer que exista comunicación entre la nueva red y la existente. 
 
-Paso 1 Ingresa al router RTR-OFFICE y ejecuta el comando show ip route desde el modo Exec Privilegiado y analiza la salida  
+Paso 1. Ingresa al router **RTR-OFFICE** y ejecuta el comando `show ip route` desde el modo Exec Privilegiado y analiza la salida.  
 
 ![imagen](../Imagenes/Práctica3/3_12.png)
 
-Como puedes ver, el router nuevo, no conce como llegar a las redes remotas, solo conoce las redes que tienen directamente conectadas, por lo tanto hay que hacer que aprenda, o en este caso los demás routers le enseñen como llegar  a las demás redes. 
+Como puedes ver, el router nuevo no conce como llegar a las redes remotas, solo conoce las redes que tienen directamente conectadas. Por lo tanto, hay que hacer que aprenda, o en este caso, que los demás routers le enseñen como llegar a las demás redes. 
 
-Paso 2. Ingresa al router RTR-OFFICE ingresa al modo de configuración global  y configura el protocolo EIGRP  como se muestra en la imagen  
-
+Paso 2. Ingresa al router RTR-OFFICE, después, ingresa al modo de configuración global y configura el protocolo **EIGRP** como se muestra en la imagen:  
 ![imagen](../Imagenes/Práctica3/3_13.png)
 
-Posteriormente ingresa nuevamente el comando show ip route desde el modo de exec privilegiado y ve la diferencia  
+Ingresa nuevamente el comando `show ip route` desde el modo de Exec privilegiado y ve la diferencia.  
 
 ![imagen](../Imagenes/Práctica3/3_14.png)
 
-Como puedes observar ahora conoce todas las demás redes  
+Ahora conoce todas las demás redes.  
 
 ### Resultado esperado 
 
-Hasta ahora, puedes observar como los protocolos de diferentes copas comienzan a darle vida a tu red, algunos protocolos que podemos ver presentes en este punto son  
+Puedes observar como los protocolos de diferentes capas comienzan a darle vida a tu red, algunos protocolos que podemos ver presentes en este punto son:  
 
-Capa 2: CDP,  STP 
+- Capa 2: CDP,  STP 
+- Capa 3: IP , EIGRP 
 
-Capa 3: IP , EIGRP 
-
-Y también pueden identificar algunas topologías implementas como estrella y anillo  
+También pueden identificar algunas topologías implementas como estrella y anillo.  
 
 ![imagen](../Imagenes/Práctica3/3_15.png)
