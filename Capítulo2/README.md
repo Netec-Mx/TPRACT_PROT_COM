@@ -10,14 +10,14 @@ Al finalizar la práctica, serás capaz de:
 ## Objetivo visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
 
-![diagrama1](../images/img1.png)
+![diagrama1](../Imagenes/Práctica2/2_1.png)
 
 ## Duración aproximada:
 - 40 minutos.
 
 ## Tabla de ayuda:
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_2.png)
 
 ## Instrucciones 
 Vamos a identificar los elementos de la Arquitectura de red empresarial en la red que ya tenemos funcionando.
@@ -25,7 +25,7 @@ Vamos a identificar los elementos de la Arquitectura de red empresarial en la re
 ### Tarea 1. Descripción de la tarea a realizar.
 Paso 1. Analiza de forma visual los dispositivos disponibles y trata de responder las siguientes preguntas.
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_3.png)
 
 - ¿Qué dispositivos corresponden a la capa de Acceso? 
 - ¿Qué dispositivos corresponden a la capa de distribución? 
@@ -41,23 +41,23 @@ Paso 1. Ingresa a el swicth ASW-M&V, pasa a modo de Exec Privilegiado y ejecuta 
 
 Este comando te muestra el estado de las interfaces a nivel físico y lógico es decir a nivel decapa 1 y capa 2. Por ejemplo, compara las interfaces FastEthernet 0/10 y FastEthernet 0/11. 
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_5.png)
 
 Como podrás ver la interface FastEthernet 0/10 tiene un estado UP UP es decir esta activa y lista para reenviar información, mientras que la interface FastEthernet 0/11, esta down down, es decir esta inactiva no podría reenviar información. 
 
 Paso 2. Ahora verifiquemos direccionamiento de capa 2, ingresa a la PC1 y manda un ping  a el router como se muestra en la imagen  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_6.png)
 
 Y posteriormente en el Switch ASW-M&V desde el modo de Exec privilegiado ejecuta el comando show mac address-table comose muestra en la imagen.
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_7.png)
 
 Como recordaras los switches trabajan a nivel de capa 2 es decir con direccionamiento MAC, lo que estas observando es como el switch aprende donde están ubicados los dispositivos a los cuales les tiene que reenviar información  
 
 Puedes corroborar las direcciones MAC como se muestra en la imagen  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_8.png)
 
 Como podrás notar el switch a creado la tabla MAC con el paso de información a través de sus puertos, y ahora sabe que la dirección MAC 00D0.D362.61CA ( PC 1) la logra alcanzar a través de la interface Fa0/10 y que la MAC 0003.e473.ea02 la puede alcanzar a través de sus interfaces G0/1 
 
@@ -69,13 +69,13 @@ Ahora Tomando en cuenta el modelo de referencia OSI y TCP/IP verifica los elemen
 
 Paso 1. Como habrás notado necesitamos direccionamiento de capa 2 y capa 3 para enviar y recibir información a través de la red, ahora verifica el direccionamiento IP ( capa 3 en la PC 1usando en la consola el comando ipconfig /all como se muestra en la Imagen  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_9.png)
 
 Como puedes ver además de la dirección MAC también tiene  una dirección IP  
 
 Paso 2. Ahora verifica el direccionamiento IP en el Router RTR-IND-3, ingresando a la consola,  y ejecutando el comando, show ip interface brief, como se muestra en la imagen 
 
-![imagen](../)
+![imagen](../Imagenes/Práctica2/2_10.png)
 
 Como podrás ver a diferencia del Switch que solo tienen capacidades de capa 2, el router si tiene soporte por default para ser configurado con direccionamiento de capa 3 , es decir direccionamiento IP 
 
