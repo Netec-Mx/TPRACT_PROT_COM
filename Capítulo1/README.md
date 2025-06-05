@@ -1,13 +1,13 @@
 # Práctica 1.1. ¿Qué es una Red? / Caso de estudio
 
 ## Objetivo de la práctica:
-El participante, lograra comprender las características generales de una red de comunicaciones  
+El participante, lograra comprender las características generales de una red de comunicaciones.  
 
 Al finalizar la práctica, serás capaz de: 
 
-- Comprender el concepto de una red  
-- Identificara los componentes que mas  
-- Visualizar las funciones básicas de una red  
+- Comprender el concepto de una red.  
+- Identificar los componentes que mas  
+- Visualizar las funciones básicas de una red.  
 
 ## Objetivo visual 
 
@@ -34,12 +34,12 @@ Al finalizar la práctica, serás capaz de:
 
 En esta actividad observaras como está conformada una red de comunicaciones básica, así que por el momento solo observaremos.
 
-### Tarea 1. Analicemos los componentes de una red y veamos como trabaja 
-Paso 1. Abre tu practica en formato Cisco Packet Tracert  y lo primero que veras es una red, esta red ya esta interconectada, configurada y funcional.
+### Tarea 1. Analizar los componentes de una red y observar como trabaja 
+Paso 1. Abre tu práctica en formato Cisco Packet Tracert. Lo primero que veras es una red, esta red ya esta interconectada, configurada y funcional.
 
 ![diagrama](../Imagenes/Práctica1/2.png)
 
--	¿Reconoces alguno de estos dispositivos?
+-	$¿Reconoces alguno de estos dispositivos?$
 -	¿Has utilizado alguno de ellos?
 - ¿Podrías enumerar las arquitecturas que conforman esta red?
 
