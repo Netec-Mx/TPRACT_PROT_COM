@@ -74,7 +74,7 @@ Paso 3. Ahora ingresa al modo de configuración global y configura el servicio d
 
 Nota: deberás esperar alrededor de 5 minutos para ver  una actualización, mientras puedes seguir con la siguiente tarea  
 
-Tarea 3:  A veces es necesario saber la historia de ciertos eventos, el recopilar información, sobre lo que ocurre en la red es importante, por lo que ahora vamos a configurar el protocolo syslog para almacenar de forma centralizada los mensajes no solicitados  
+## Tarea 3: A veces es necesario saber la historia de ciertos eventos, el recopilar información, sobre lo que ocurre en la red es importante, por lo que ahora vamos a configurar el protocolo syslog para almacenar de forma centralizada los mensajes no solicitados  
 
 Paso 1. Ingresa nuevamente al router RTR-OFFICE, de ahí navega hasta el modo de configuración global y configura syslog como se muestra en la imagen  
 
