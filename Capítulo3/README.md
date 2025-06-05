@@ -6,7 +6,7 @@ Al finalizar la práctica, serás capaz de:
 - Realizar la configuración básica de los equipos de red básicos.  
 - Realizar la configuración de un protocolo ruteable y uno de re ruteo.  
 
-## Objetivo Visual 
+## Objetivo visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
 
 ![diagrama1](../Imagenes/Práctica3/3_1.png)
