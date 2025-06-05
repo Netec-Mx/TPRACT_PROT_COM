@@ -6,7 +6,7 @@ El participante, lograra comprender las características generales de una red de
 Al finalizar la práctica, serás capaz de: 
 
 - Comprender el concepto de una red.  
-- Identificar los componentes que mas  
+- Identificar los componentes que mas  mas utilizados  en una red 
 - Visualizar las funciones básicas de una red.  
 
 ## Objetivo visual 
