@@ -6,7 +6,7 @@ El participante, lograra comprender las características generales de una red de
 Al finalizar la práctica, serás capaz de: 
 
 - Comprender el concepto de una red.  
-- Identificar los componentes que más utilizados en una red. 
+- Identificar los componentes más utilizados en una red. 
 - Visualizar las funciones básicas de una red.  
 
 ## Objetivo visual 
@@ -49,7 +49,7 @@ En esta actividad observaras como está conformada una red de comunicaciones bá
 - Usuario: admin
 - Contraseña: cisco1234!
 
-Finalmente da clic en el botón Sing in.
+Finalmente, da clic en el botón Sing in.
 
 ![imagen](../Imagenes/Práctica1/3.png)
 
@@ -81,7 +81,7 @@ Características de un switch:
 
 > Nota: Si algunos de estos términos no te son familiares, no te preocupes, hablaremos de ellos más adelante.
 
-**Paso 2.** Ingresa al router `RTR-IND-2`, asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
+**Paso 2.** Ingresa al router **RTR-IND-2**, asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
 
 ![imagen](../Imagenes/Práctica1/11.png)
 
@@ -90,7 +90,7 @@ Características de un Router:
 - Se dice que trabaja a nivel de capa 3.
 - Es un dispositivo de distribución.
 - Menos densidad de puestos en comparación con switch.
-- Divide dominios de Broadcast 
+- Divide dominios de Broadcast. 
 
 > Nota: Si algunos de estos términos no te son familiares, no te preocupes, hablaremos de ellos más adelante.
 
@@ -100,15 +100,15 @@ Características de un Router:
 
 ![imagen](../Imagenes/Práctica1/7.png)
 
-**Paso 2.** Una vez que puedas ver el Simulation Panel, ingresa a la PC1 y envía un ping a la dirección 10.10.50.20  con el comando ping 10.10.50.20 y luego presiona la tecla enter.
+**Paso 2.** Una vez que puedas ver el Simulation Panel, ingresa a la PC1 y envía un ping a la dirección 10.10.50.20 con el comando ping 10.10.50.20 y luego presiona la tecla enter.
 
 ![imagen](../Imagenes/Práctica1/8.png)
 
-**Paso 3.** Regresa a el Sumulation Panel  y en la sección de Play control, da clic en el icono de play, podrás observar de forma gráfica como viajan los paquetes a lo largo de la red.
+**Paso 3.** Regresa al Simulation Panel y en la sección de Play controls, da clic en el icono de play. Podrás observar de forma gráfica como viajan los paquetes a lo largo de la red.
 
 ![imagen](../Imagenes/Práctica1/9.png)
 
-**Paso 4.** Puedes pausar la trayectoria de los paquetes desde la sección de play Controls en el Simulation Panel, da clic en alguno de los paquetes y visualiza la información que ofrecen las pestañas OSI Model, Inbound PDU Details y Outbound PDU Details.
+**Paso 4.** Puedes pausar la trayectoria de los paquetes desde la sección de Play controls en el Simulation Panel, da clic en alguno de los paquetes y visualiza la información que ofrecen las pestañas OSI Model, Inbound PDU Details y Outbound PDU Details.
 
 ![imagen](../Imagenes/Práctica1/10.png)
 
@@ -116,4 +116,4 @@ Características de un Router:
 
 
 ### Resultado esperado
-Como puedes ver una red de comunicaciones se conforma varios dispositivos que estarán interconectados entre sí, compartirán información para lograr que se ejecuten algunas acciones. Estas acciones dependerán del por que o para que fue diseñada la red y lo que se este transportando, y todo esto no sería posible sin la interacción de un protocolo de comunicación. 
+Como puedes ver una red de comunicaciones se conforma de varios dispositivos que estarán interconectados entre sí, compartiendo información para lograr que se ejecuten algunas acciones. Estas acciones dependerán del por qué o para qué fue diseñada la red y lo que se este transportando, y todo esto no sería posible sin la interacción de un protocolo de comunicación. 
