@@ -27,7 +27,7 @@ Al finalizar la práctica, serás capaz de:
 | ASW-IND-1       | Switch                 | 10.10.50.10                                         | N/A                                     |
 | RTR-IND-1       | Router / Núcleo        | G0/0: 172.16.1.17/30<br>G0/1: 172.16.1.13/30         | N/A                                     |
 | RTR-IND-2       | Router / Default Gateway | G0/1: 172.16.1.14/30<br>G0/2: 10.10.50.1/24        | N/A                                     |
-| RTR-IND-3       | Router / Default Gateway | G0/0: 172.16.1.18/30                               | N/A                                     |
+| RTR-IND-3       | Router / Default Gateway | G0/0: 172.16.1.14/30<br>G0/2: 10.10.60.1/24                               | N/A                                     |
 
 
 ## Instrucciones 
