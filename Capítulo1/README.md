@@ -36,7 +36,7 @@ En esta actividad observaras como está conformada una red de comunicaciones bá
 
 ### Tarea 1. Analizar los componentes de una red y observar cómo trabaja 
 
-**Paso 1.** Abre tu práctica en formato Cisco Packet Tracert. Lo primero que veras es una red, esta red ya está interconectada, configurada y funcional.
+Paso 1. Abre tu práctica en formato Cisco Packet Tracert. Lo primero que veras es una red, esta red ya está interconectada, configurada y funcional.
 
 ![diagrama](../Imagenes/Práctica1/2.png)
 
@@ -44,7 +44,7 @@ En esta actividad observaras como está conformada una red de comunicaciones bá
 - *¿Has utilizado alguno de ellos?*  
 - *¿Podrías enumerar las arquitecturas que conforman esta red?*
 
-**Paso 2.** Da clic sobre la Tablet y selecciona Web Browser, se abrirá un explorador. En la barra URL ingresa la  dirección IP 10.10.50.20, posteriormente te solicitará un loggin, ingresa los siguientes datos:
+Paso 2. Da clic sobre la Tablet y selecciona Web Browser, se abrirá un explorador. En la barra URL ingresa la  dirección IP 10.10.50.20, posteriormente te solicitará un loggin, ingresa los siguientes datos:
 
 - Usuario: admin
 - Contraseña: cisco1234!
@@ -53,14 +53,14 @@ Finalmente, da clic en el botón Sing in.
 
 ![imagen](../Imagenes/Práctica1/3.png)
 
-**Paso 3.** Una vez que te logueaste correctamente podrás ver una lista de dispositivos, estos son dispositivos IoT con distintas funciones. Por ejemplo, despliega a `IoT1-FAN_PRODUCCION (PTT0810D43P-)`, y experimeta con las opciones (Low y Hight).
+Paso 3. Una vez que te logueaste correctamente podrás ver una lista de dispositivos, estos son dispositivos IoT con distintas funciones. Por ejemplo, despliega a `IoT1-FAN_PRODUCCION (PTT0810D43P-)`, y experimeta con las opciones (Low y Hight).
 
 ![imagen](../Imagenes/Práctica1/4.png)
 
 Como puedes observar lo estamos controlando a través de la red, lo mismo ocurre con los demás dispositivos IoT. Recuerda que son objetos físicos que están conectados a internet y pueden **recoger, enviar o recibir datos** mediante sensores, software y otras tecnologías. 
 Estos dispositivos pueden operar de forma autónoma o ser controlados a distancia, y están diseñados para mejorar la eficiencia, automatizar tareas y proporcionar información útil en tiempo real, esto es posible gracias a una red de comunicaciones.
 
-**Paso 4.** Trata de repetir las instrucciones de los pasos 2 y 3 pero ahora desde PC1.
+Paso 4. Trata de repetir las instrucciones de los pasos 2 y 3 pero ahora desde PC1.
 
 ![imagen](../Imagenes/Práctica1/5.png)
 
@@ -68,7 +68,7 @@ Estos dispositivos pueden operar de forma autónoma o ser controlados a distanci
 
 ### Tarea 2. Analizar las características de los dispositivos de red.
 
-**Paso 1.** Ingresa al `switch ASW-IND-1`. Asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
+Paso 1. Ingresa al `switch ASW-IND-1`. Asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
 
 ![imagen](../Imagenes/Práctica1/6.png)
 
@@ -81,7 +81,7 @@ Características de un switch:
 
 > Nota: Si algunos de estos términos no te son familiares, no te preocupes, hablaremos de ellos más adelante.
 
-**Paso 2.** Ingresa al router **RTR-IND-2**, asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
+Paso 2. Ingresa al router **RTR-IND-2**, asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
 
 ![imagen](../Imagenes/Práctica1/11.png)
 
@@ -96,19 +96,19 @@ Características de un Router:
 
 ### Tarea 3. Analizar como viaja la información.
 
-**Paso 1.** En la interface de Cisco Packer Tracer, ubica en la esquina inferior derecha el icono de Simulation. Da clic sobre él, aparecerá una ventana llamada Simulation panel.
+Paso 1. En la interface de Cisco Packer Tracer, ubica en la esquina inferior derecha el icono de Simulation. Da clic sobre él, aparecerá una ventana llamada Simulation panel.
 
 ![imagen](../Imagenes/Práctica1/7.png)
 
-**Paso 2.** Una vez que puedas ver el Simulation Panel, ingresa a la PC1 y envía un ping a la dirección 10.10.50.20 con el comando ping 10.10.50.20 y luego presiona la tecla enter.
+Paso 2. Una vez que puedas ver el Simulation Panel, ingresa a la PC1 y envía un ping a la dirección 10.10.50.20 con el comando ping 10.10.50.20 y luego presiona la tecla enter.
 
 ![imagen](../Imagenes/Práctica1/8.png)
 
-**Paso 3.** Regresa al Simulation Panel y en la sección de Play controls, da clic en el icono de play. Podrás observar de forma gráfica como viajan los paquetes a lo largo de la red.
+Paso 3. Regresa al Simulation Panel y en la sección de Play controls, da clic en el icono de play. Podrás observar de forma gráfica como viajan los paquetes a lo largo de la red.
 
 ![imagen](../Imagenes/Práctica1/9.png)
 
-**Paso 4.** Puedes pausar la trayectoria de los paquetes desde la sección de Play controls en el Simulation Panel, da clic en alguno de los paquetes y visualiza la información que ofrecen las pestañas OSI Model, Inbound PDU Details y Outbound PDU Details.
+Paso 4. Puedes pausar la trayectoria de los paquetes desde la sección de Play controls en el Simulation Panel, da clic en alguno de los paquetes y visualiza la información que ofrecen las pestañas OSI Model, Inbound PDU Details y Outbound PDU Details.
 
 ![imagen](../Imagenes/Práctica1/10.png)
 
