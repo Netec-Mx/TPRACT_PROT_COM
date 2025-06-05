@@ -14,14 +14,21 @@ Al finalizar la práctica, serás capaz de:
 ![diagrama1](../Imagenes/Práctica1/1.png)
 
 ## Duración aproximada:
-- xx minutos.
+- 30 minutos.
 
 ## Tabla de ayuda:
 
-+++
-![tabladeayuda1](../images/2.png)
+| Dispositivo     | Características        | Dirección / Contraseña                              | Credenciales                            |
+|-----------------|------------------------|-----------------------------------------------------|-----------------------------------------|
+| PC1             | Dispositivo Final      | 10.10.60.100/24                                     | N/A                                     |
+| SER-DHCP IoT    | Servidor               | 10.10.50.2024                                       | Usuario: admin<br>Contraseña: cisco1234! |
+| ADMIN IoT       | Tablet                 | 10.10.50.50/24                                      | N/A                                     |
+| Wireless router | AP                     | IPv4 (DHCP)                                         | N/A                                     |
+| ASW-IND-1       | Switch                 | 10.10.50.10                                         | N/A                                     |
+| RTR-IND-1       | Router / Núcleo        | G0/0: 172.16.1.17/30<br>G0/1: 172.16.1.13/30         | N/A                                     |
+| RTR-IND-2       | Router / Default Gateway | G0/1: 172.16.1.14/30<br>G0/2: 10.10.50.1/24        | N/A                                     |
+| RTR-IND-3       | Router / Default Gateway | G0/0: 172.16.1.18/30                               | N/A                                     |
 
-![tabladeayuda2](../images/3.png)
 
 ## Instrucciones 
 
