@@ -66,7 +66,7 @@ Características de un switch:
 
 Paso 2. Ingresa al router RTR-IND-2, asegúrate de posicionarte en la pestaña Physical, donde podrás observar algunas de sus características físicas más allá de su icono.
 
-![imagen](../Imagenes/Práctica1/7.png)
+![imagen](../Imagenes/Práctica1/11.png)
 
 Características de un Router: 
 - Se dice que trabaja a nivel de capa 3
@@ -81,19 +81,19 @@ Paso 1: En la interface de Cisco Packer Tracer, ubica en la esquina inferior der
 
 Paso 1: En la interface de Cisco Packer Tracer, ubica en la esquina inferior derecha el icono se Simulation, da clic, aparecerá una ventana llamada Simulation panel.
 
-![imagen](../Imagenes/Práctica1/8.png)
+![imagen](../Imagenes/Práctica1/7.png)
 
 Paso 2. Una vez que puedas ver el Simulation Panel, ingresa a la PC1 y envía un ping a la dirección 10.10.50.20  con el comando ping 10.10.50.20 y luego presiona la tecla enter
 
-![imagen](../Imagenes/Práctica1/9.png)
+![imagen](../Imagenes/Práctica1/8.png)
 
 Paso 3. Regresa a el Sumulation Panel  y en la sección de Play control, da clic en el icono de play, podrás observar de forma gráfica como viajan los paquetes a lo largo de la red
 
-![imagen](../Imagenes/Práctica1/10.png)
+![imagen](../Imagenes/Práctica1/9.png)
 
 Paso 4. Puede pausar la trayectoria de los paquetes desde la sección de play Controls en el Simulation Panel, da clic en alguno de los paquetes y visualiza la información que ofrece  las pestañas OSI Model, Inbound PDU Details  y Outbound PDU Details.
 
-![imagen](../images/13.png)
+![imagen](../Imagenes/Práctica1/10.png)
 
 ¿Alguna de esta información se te hace familiar?
 
