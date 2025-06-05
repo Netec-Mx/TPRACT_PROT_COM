@@ -40,9 +40,9 @@ En esta actividad observaras como está conformada una red de comunicaciones bá
 
 ![diagrama](../Imagenes/Práctica1/2.png)
 
-*¿Reconoces alguno de estos dispositivos?*  
-*¿Has utilizado alguno de ellos?*  
-*¿Podrías enumerar las arquitecturas que conforman esta red?*
+- *¿Reconoces alguno de estos dispositivos?*  
+- *¿Has utilizado alguno de ellos?*  
+- *¿Podrías enumerar las arquitecturas que conforman esta red?*
 
 **Paso 2.** Da clic sobre la Tablet y selecciona Web Browser, se abrirá un explorador. En la barra URL ingresa la  dirección IP 10.10.50.20, posteriormente te solicitará un loggin, ingresa los siguientes datos:
 
