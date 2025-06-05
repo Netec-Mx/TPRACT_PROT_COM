@@ -17,6 +17,23 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 
 ## Tabla de ayuda:
 
+| Dispositivo      | Características                            | Dirección / Contraseña                                                              | Credenciales                                |
+|------------------|---------------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------|
+| PC1              | Dispositivo Final                          | 10.10.60.100/24                                                                      | N/A                                         |
+| SER-DHCP IoT     | Servidor                                   | 10.10.50.2024                                                                        | Usuario: admin<br>Contraseña: cisco1234!    |
+| ADMIN IoT        | Tablet                                     | 10.10.50.50/24                                                                       | N/A                                         |
+| PCs              | Dispositivos finales                       | IPv4 DHCP                                                                            | N/A                                         |
+| Wireless router  | AP                                         | IPv4 (DHCP)                                                                          | N/A                                         |
+| ASW-IND-1        | Switch (ACCESO)                            | 10.10.50.10                                                                          | N/A                                         |
+| ASW-1            | Switch (ACCESO)                            | 192.168.1.10                                                                         | N/A                                         |
+| ASW-2            | Switch (ACCESO)                            | 192.168.1.11                                                                         | N/A                                         |
+| ASW-3            | Switch (ACCESO)                            | 192.168.1.12                                                                         | N/A                                         |
+| RTR-IND-1        | Router / (Núcleo)                          | G0/0: 172.16.1.17/30<br>G0/1: 172.16.1.13/30<br>G0/0: 192.168.2.2/24                 | N/A                                         |
+| RTR-IND-2        | Router / Default Gateway / (Distribución) | G0/1: 172.16.1.14/30<br>G0/2: 10.10.50.1/24                                          | N/A                                         |
+| RTR-IND-3        | Router / Default Gateway / (Distribución) | G0/0: 172.16.1.18/30<br>G0/1: 10.10.60.1/24                                          | N/A                                         |
+| RTR-OFFICE       | Router / Default Gateway / (Distribución) | G0/1: 192.168.1.1/24<br>G0/2: 192.168.1.2/24                                         | N/A                                         |
+
+
 Hasta este punto ya tenemos conectividad completa en nuestra nueva red, pero solo a nivel de dispositivos de red, por lo que implementaremos algunos protocolos para garantizar que también los dispositivos finales puedan comunicarse  
 
 ## Instrucciones 
