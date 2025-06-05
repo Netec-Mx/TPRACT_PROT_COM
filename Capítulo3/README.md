@@ -41,14 +41,10 @@ Como veras ya tienes control de los dispositivos de IoT, comprobando que ya tene
 
 ![imagen](../)
 
-### Tarea 2. La administración del tiempo es importante para que una red funcione de forma óptima, el que los dispositivos estén sincronizados en cuanto a fecha y hora es necesarios para las estampas de tiempo, actualizaciones etc, por lo que configuraremos NTP ( Network Time Protocol) 
+### Tarea 2. 
+La administración del tiempo es importante para que una red funcione de forma óptima, el que los dispositivos estén sincronizados en cuanto a fecha y hora es necesarios para las estampas de tiempo, actualizaciones etc, por lo que configuraremos NTP ( Network Time Protocol) 
 
 Paso 1. Ingresa al servidor  SER-DHCP IoT , en la pestaña de Services y en el menú de Services selecciona NTP y configura el servicio de NTP con la  hora actual, como se muestra en la imagen. 
-
-![imagen](../)
-
-### Tarea 2. Descripción de la tarea a realizar.
-Paso 1. Debe de relatar el instructor en verbo infinito, claro y conciso cada actividad para ir construyendo paso a paso en el objetivo de la tarea.
 
 ![imagen](../)
 
