@@ -39,7 +39,7 @@ Paso 1. Abre tu práctica en formato Cisco Packet Tracert. Lo primero que veras 
 
 ![diagrama](../Imagenes/Práctica1/2.png)
 
--	$¿Reconoces alguno de estos dispositivos?$
+$ -	¿Reconoces alguno de estos dispositivos?
 -	¿Has utilizado alguno de ellos?
 - ¿Podrías enumerar las arquitecturas que conforman esta red?
 
