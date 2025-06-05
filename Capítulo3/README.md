@@ -3,51 +3,67 @@
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
 - Simular la implementación de una topología de red en Cisco Packet Tracert.  
-- Realizar la configuración básica los equipos de red básicos.  
+- Realizar la configuración básica de los equipos de red básicos.  
 - Realizar la configuración de un protocolo ruteable y uno re ruteo.  
 
 ## Objetivo Visual 
 Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es la siguiente imagen. 
 
-![diagrama1](../images/img1.png)
+![diagrama1](../Imagenes/Práctica3/3_1.png)
 
 ## Duración aproximada:
 - 40 minutos.
 
 ## Tabla de ayuda:
 
+| Dispositivo      | Características                            | Dirección / Contraseña                                                              | Credenciales                                |
+|------------------|---------------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------|
+| PC1              | Dispositivo Final                          | 10.10.60.100/24                                                                      | N/A                                         |
+| SER-DHCP IoT     | Servidor                                   | 10.10.50.2024                                                                        | Usuario: admin<br>Contraseña: cisco1234!    |
+| ADMIN IoT        | Tablet                                     | 10.10.50.50/24                                                                       | N/A                                         |
+| PCs              | Dispositivos finales                       | IPv4 DHCP                                                                            | N/A                                         |
+| Wireless router  | AP                                         | IPv4 (DHCP)                                                                          | N/A                                         |
+| ASW-IND-1        | Switch (ACCESO)                            | 10.10.50.10                                                                          | N/A                                         |
+| ASW-1            | Switch (ACCESO)                            | 192.168.1.10                                                                         | N/A                                         |
+| ASW-2            | Switch (ACCESO)                            | 192.168.1.11                                                                         | N/A                                         |
+| ASW-3            | Switch (ACCESO)                            | 192.168.1.12                                                                         | N/A                                         |
+| RTR-IND-1        | Router / (Núcleo)                          | G0/0: 172.16.1.17/30<br>G0/1: 172.16.1.13/30<br>G0/0: 192.168.2.2/24                 | N/A                                         |
+| RTR-IND-2        | Router / Default Gateway / (Distribución) | G0/1: 172.16.1.14/30<br>G0/2: 10.10.50.1/24                                          | N/A                                         |
+| RTR-IND-3        | Router / Default Gateway / (Distribución) | G0/0: 172.16.1.18/30<br>G0/1: 10.10.60.1/24                                          | N/A                                         |
+| RTR-OFFICE       | Router / Default Gateway / (Distribución) | G0/1: 192.168.1.1/24<br>G0/2: 192.168.1.2/24                                         | N/A                                         |
+
 
 ## Instrucciones 
 
 ### Tarea 1.  
 
-Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan 
+Tomando como punto base la topología existente, vamos a agregar los dispositivos que darán forma a nuestra red que nos solicitan. 
 
-Paso 1. Tomando en cuenta la arquitectura de red empresarial vamos construir de la capa de acceso de nuestra topología, en la parte  inferior izquierda da clic en el icono del switch y arrastra tres Swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triangulo.  
+Paso 1. Tomando en cuenta la Arquitectura de red empresarial vamos construir la capa de acceso de nuestra topología. En la parte inferior izquierda da clic en el icono del switch y arrastra tres Swicthes modelo 2960 y colócalos como se muestra en la imagen formando un triángulo.  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_2.png)
 
-Posteriormente procede a cablear los quipos, en la parte inferior izquierda encontraras un icono muy similar a un “rayo”, da clic en el y encontraras los cables disponibles, selecciona el cable crossover conéctalos como se muestra en la imagen.  
+Posteriormente, procede a cablear los quipos. En la parte inferior izquierda encontraras un icono muy similar a un “rayo”, da clic en él y encontraras los cables disponibles. Selecciona el cable crossover y conéctalos como se muestra en la imagen:  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_3.png)
 
-Ahora vamos a repetir los pasos anteriores pero en esta ocasión con PCs ( tres por cada switch que este en la parte inferior) como se muestra en la imagen  
+Ahora, vamos a repetir los pasos anteriores, pero en esta ocasión con PCs (tres por cada switch que este en la parte inferior) como se muestra en la imagen:  
 
-Nota Procura usar los puertos Fa0/5 a Fa0/8 y utiliza cables Straight-Trough, y en las PC se debe de conectar en los puertos FastEthernet0 
+> Nota: Procura usar los puertos Fa0/5 a Fa0/8 y utiliza cables Straight-Trough. En las PC se debe de conectar en los puertos FastEthernet0.
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_4.png)
 
-Paso 2. Tomando en cuenta la arquitectura de red empresarial, vamos a construir la capa de distribución, en la parte inferior izquierda da clic en el icono de routers, y  con el ratón selecciona un router 2911, y arrástralo a tu topología como se muestra en la imagen  
+Paso 2. Tomando en cuenta la Arquitectura de red empresarial, vamos a construir la capa de distribución. En la parte inferior izquierda, da clic en el icono de routers, con el ratón selecciona un router 2911 y arrástralo a tu topología como se muestra en la imagen. 
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_5.png)
 
-Ahora hay que cablearlo, selecciona un cable Straight-Trough, para conectar de la interfaz G0/1 del switch a la interface G0/1 del router, depues usa un cable Cross-over para conectar de la interface G0/2 del Router que acabas de colocar a la interface G0/2 del router RTR-IND-1, debería de verse como la siguiente imagen  
+Ahora debes clablearlo. Selecciona un cable Straight-Trough para conectarlo de la interfaz G0/1 del switch a la interface G0/1 del router. Después usa un cable Cross-over para conectarlo de la interface G0/2 del router que acabas de colocar a la interface G0/2 del router RTR-IND-1, debería de verse como la siguiente imagen:  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_6.png)
 
-Paso 3. Una vez que  ya está esta tu topología completa, posiciónate en el swicth que esta en la “punta del triángulo” ve a modo exec privilegiado y ejecuta el comando show cdp neighbors, y analízalo junto a tu instructor  
+Paso 3. Una vez que ya está tu topología completa, posiciónate en el swicth que esta en la “punta del triángulo” ve a modo Exec privilegiado y ejecuta el comando show cdp neighbors, y analízalo junto a tu instructor.  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_7.png)
 
 CDP es un protocolo de capa 2 que ofrece información de los dispositivos directamente conectados, sin embargo, sin una configuración apropiada, esta información pudiera llegara a ser confusa, por ejemplo nos muestra que esta conectado a dos dispositivos llamados switch, es decir por el momento todos se llaman switch 
 
@@ -55,21 +71,21 @@ CDP es un protocolo de capa 2 que ofrece información de los dispositivos direct
 
 Paso 1. deberás configurar los parámetros básicos en los swicthes como  se muestra en la imagen  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_8.png)
 
 Paso 2. Ahora regresa cona la consola de ahora llamado ASW-3 e ingresa nuevamente el comando show cdp neighbors y observa la diferencia  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_9.png)
 
 ¿Ahora ves la diferencia?, sin embargo, aún no logramos ver al router que esta directamente conectado, se debe a que aun no esta configurado. 
 
 Paso 3. Ingresa a la consola del router que añadiste en esta actividad y configúralo como se muestra en la imagen. 
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_10.png)
 
 Puedes comprobar la eficacia de tus configuraciones con un ping, desde el ahora router RTR-OFFICE pueden enviar un ping a los switches  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_11.png)
 
 ¿Puedes decir que otros protocolos están presentes en la red que acabas de configurar? Corrobóralo con tu instructor  
 
@@ -80,17 +96,17 @@ En esencia ya tenemos comunicación local entre los dispositivos de red que reci
 
 Paso 1 Ingresa al router RTR-OFFICE y ejecuta el comando show ip route desde el modo Exec Privilegiado y analiza la salida  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_12.png)
 
 Como puedes ver, el router nuevo, no conce como llegar a las redes remotas, solo conoce las redes que tienen directamente conectadas, por lo tanto hay que hacer que aprenda, o en este caso los demás routers le enseñen como llegar  a las demás redes. 
 
 Paso 2. Ingresa al router RTR-OFFICE ingresa al modo de configuración global  y configura el protocolo EIGRP  como se muestra en la imagen  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_13.png)
 
 Posteriormente ingresa nuevamente el comando show ip route desde el modo de exec privilegiado y ve la diferencia  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_14.png)
 
 Como puedes observar ahora conoce todas las demás redes  
 
@@ -104,4 +120,4 @@ Capa 3: IP , EIGRP
 
 Y también pueden identificar algunas topologías implementas como estrella y anillo  
 
-![imagen](../)
+![imagen](../Imagenes/Práctica3/3_15.png)
