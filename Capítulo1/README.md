@@ -37,7 +37,7 @@ Paso 1. Abre tu practica en formato Cisco Packet Tracert  y lo primero que veras
 
 Paso 2. Da clic sobre la Tablet, y da clic en Web Browser, se abrirá un explorador donde en la barra URL ingresa la  dirección IP 10.10.50.20, posteriormente te solicitará un loggin, ingresa  admin como usuario y cisco1234! como contraseña, finalmente da clic en el botón Sing in
 
-![imagen](../images/5.png)
+![imagen](../images/Imagen2.png)
 
 Paso 3. Una vez que te logueaste correctamente podrás ver una lista de dispositivos, estos dispositivos son dispositivos IoT, con distintas funciones. Por ejemplo despliega a IoT1-FAN_PRODUCCION (PTT0810D43P-),y experimeta con las opciones (Low y Hight)
 
