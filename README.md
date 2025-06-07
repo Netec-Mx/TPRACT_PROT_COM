@@ -13,7 +13,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 ---
  
 ## Índice:
- - [Práctica 1.1. ¿Qué es una red? / Caso de estudio.](./Capítulo1/README.md)
+ - [Práctica 1.1. ¿Qué es una red? Caso de estudio.](./Capítulo1/README.md)
    - **Descripción**: Al finalizar la práctica serás capaz de comprender el concepto de una red y visualizar las funciones básicas de una red.
    - ⏱️ **Duración estimada**: 30 minutos.
 
