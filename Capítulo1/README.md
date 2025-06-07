@@ -1,4 +1,4 @@
-# Práctica 1.1. ¿Qué es una Red? / Caso de estudio
+# Práctica 1.1. ¿Qué es una Red? Caso de estudio
 
 ## Objetivo de la práctica:
 El participante, lograra comprender las características generales de una red de comunicaciones.  
