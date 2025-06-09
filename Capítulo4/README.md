@@ -34,74 +34,92 @@ Crear un diagrama o imagen que resuma las actividades a realizar, un ejemplo es 
 | RTR-OFFICE       | Router / Default Gateway / (Distribución) | G0/1: 192.168.1.1/24<br>G0/2: 192.168.1.2/24                                         | N/A                                         |
 
 
-Hasta este punto ya tenemos conectividad completa en nuestra nueva red, pero solo a nivel de dispositivos de red, por lo que implementaremos algunos protocolos para garantizar que también los dispositivos finales puedan comunicarse.  
+Hasta este punto, la nueva red cuenta con conectividad completa, pero únicamente a nivel de dispositivos de red. Para garantizar la comunicación entre los dispositivos finales, implementaremos algunos protocolos adicionales.
 
-## Instrucciones 
+## Instrucciones:
 
 ### Tarea 1. Configurar el protocolo DHCP para asignar el direccionamiento IP a los dispositivos finales.
 
-Paso 1. Ingresa a el router **RTR-OFFICE** y configura DHCP en modo de configuración global como se muestra en la imagen:  
+Paso 1. Ingresa al router **RTR-OFFICE** y configura **DHCP** en modo de configuración global, como se muestra en la imagen.
 
 ![imagen](../Imagenes/Práctica4/4_2.png)
 
-Paso 2. Configura las PC para recibir información del protocolo IP mediante DHCP. 
+Paso 2. Configura las PC para recibir información del protocolo IP mediante **DHCP**. 
 
 ![imagen](../Imagenes/Práctica4/4_3.png)
 
-Como podrás ver, casi de forma inmediata adquieren su dirección IP, máscara de subred y default Gateway. 
-De forma muy básica ya puedes tener acceso a las aplicaciones de red como la administración de los dispositivos de IoT.
+Como podrás notar, casi de forma inmediata adquieren su dirección IP, máscara de subred y default gateway. 
 
-Paso 3. Para comprobarlo, en cualquiera de las PC que ya cuentan con direccionamiento IP, abre un explorador e ingresa la **IP 10.10.50.20** y las credenciales 
+De forma muy básica, ya es posible acceder a las aplicaciones de red, como la administración de los dispositivos de IoT.
 
-- User: admin
-- Password: cisco1234! 
+Paso 3. Para verificar la configuración, abre un explorador en cualquiera de las PCs que ya tienen direccionamiento IP. Luego, ingresa la dirección 10.10.50.20 junto con las credenciales correspondientes. 
+
+- **User:** admin
+- **Password:** cisco1234! 
 
 ![imagen](../Imagenes/Práctica4/4_4.png)
 
-Como veras ya tienes control de los dispositivos de IoT, comprobando que ya tenemos conectividad completa.  
+Como puedes ver, ahora tienes control sobre los dispositivos IoT, lo que confirma que la conectividad está completamente establecida.
 
 ![imagen](../Imagenes/Práctica4/4_5.png)
 
-### Tarea 2. Configurar Network Time Protocol
-La administración del tiempo es importante para que una red funcione de forma óptima, el que los dispositivos estén sincronizados en cuanto a fecha y hora es necesarios para las estampas de tiempo, actualizaciones etc.
+### Tarea 2. Configurar Network Time Protocol.
 
-Paso 1. Ingresa al servidor **SER-DHCP IoT**. En la pestaña de Services selecciona en su menú la opción NTP y configura el servicio de NTP con la  hora actual, como se muestra en la imagen. 
+La administración del tiempo es fundamental para el óptimo funcionamiento de una red. La sincronización de fecha y hora en los dispositivos es esencial para gestionar estampas de tiempo, realizar actualizaciones y garantizar un desempeño eficiente.
+
+Paso 1. Ingresa al servidor **SER-DHCP IoT**, dirígete la pestaña de **Services**, selecciona la opción NTP en el menú y configura el servicio con la hora actual, como se muestra en la imagen. 
 
 ![imagen](../Imagenes/Práctica4/4_6.png)
 
-Paso 2. Dirigete al router **RTR-OFFICE** y verifica la hora actual del dispositivo con el comando `show clock` en modo Exec Privilegiado y verifica la hora con la que esta configurado el dispositivo. 
+Paso 2. Dirígete al router RTR-OFFICE y verifica la hora actual del dispositivo ejecutando el siguiente comando en modo Exec Privilegiado:
+
+```
+show clock
+``` 
+
+Verifica la hora con la que está configurado el dispositivo. 
 
 ![imagen](../Imagenes/Práctica4/4_7.png)
 
-Paso 3. Ingresa al modo de configuración global y configura el servicio de NTP como se muestra en la imagen:  
+Paso 3. Ingresa al modo de configuración global y configura el servicio de NTP, como se muestra en la imagen:  
 
 ![imagen](../Imagenes/Práctica4/4_8.png)
 
-> Nota: Deberás esperar alrededor de 5 minutos para ver una actualización, mientras puedes seguir con la siguiente tarea.  
+> Nota: Deberás esperar alrededor de 5 minutos para ver una actualización. Mientras tanto, puedes seguir con la siguiente tarea.  
 
 ### Tarea 3. Configurar el protocolo syslog para almacenar de forma centralizada los mensajes no solicitados.
 
-Paso 1. Ingresa nuevamente al router RTR-OFFICE, de ahí navega hasta el modo de configuración global y configura syslog como se muestra en la imagen:  
+Paso 1. Ingresa nuevamente al router **RTR-OFFICE**, dirígete al modo de configuración global y configura **Syslog**, tal como se muestra en la imagen:  
 
 ![imagen](../Imagenes/Práctica4/4_9.png)
 
-Paso 2. Ahora, simula una falla en tu red. Ingresa a la interface  G0/1 y  apaga la interface con el comando `shutdown`, veremos como aparece un mensaje indicando lo ocurrido.
+Paso 2. Simula una falla en tu red. Ingresa a la interface  G0/1 y apaga la interfaz con el siguiente comando: 
+
+```
+shutdown
+```
+
+A continuación, podrás observar un mensaje indicando qué fue lo que ocurrió.
 
 ![imagen](../Imagenes/Práctica4/4_10.png)
 
-Paso 3. Ahora ve al servidor **SER-DHCP-IoT**, en la pestaña de Services selecciona SYSLOG. Podrás ver como se almacenaron los log en el servidor, también puedes notar que tienen su estampa de tiempo acorde a la hora actual.  
+Paso 3. Accede al servidor **SER-DHCP-IoT**, dirígete a la pestaña de Services y selecciona **SYSLOG**. Podrás observar cómo se almacenaron los log en el servidor y notarás que incluyen su estampa de tiempo, sincronizada a la hora actual.  
 
 ![imagen](../Imagenes/Práctica4/4_11.png)
 
-Puedes encender de nuevo la interface G0/1 con el comando `no shutdown` y veras como se incrementan los logs en el servidor.  
+Puedes encender nuevamente la interface **G0/1** con el comando:
 
-### Resultado esperado 
+```
+no shutdown
+```
 
-Comprender la diferencia y aplicación entre los diferentes protocolos existentes en una red: 
+Por lo tanto, observarás cómo se incrementan los logs en el servidor.  
+
+## Resultado esperado:
+
+En esta práctica, lograste comprender la diferencia y aplicación entre los diferentes protocolos existentes en una red: 
 
 - Protocolo ruteables  
 - Protocolos de ruteo 
 - Protocolos de administración  
-- Comprender la importancia de las implementaciones centralizadas en la implementación y administración de una red  
-
- 
+- Comprender la importancia de las implementaciones centralizadas en la implementación y administración de una red.
