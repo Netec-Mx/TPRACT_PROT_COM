@@ -27,6 +27,12 @@ Al finalizar la práctica, serás capaz de:
 | RTR-IND-2       | Router / Default Gateway | G0/1: 172.16.1.14/30<br>G0/2: 10.10.50.1/24        | N/A                                     |
 | RTR-IND-3       | Router / Default Gateway | G0/0: 172.16.1.18/30<br>G0/1: 10.10.60.1/24                               | N/A                                     |
 
+---
+
+**[⬅️ Atrás](https://netec-mx.github.io/TPRACT_PROT_COM/Cap%C3%ADtulo1/)** | **[Lista General](https://netec-mx.github.io/TPRACT_PROT_COM/)** | **[Siguiente ➡️](https://netec-mx.github.io/TPRACT_PROT_COM/Cap%C3%ADtulo3/)**
+
+---
+
 ## Instrucciones:
 
 Vamos a identificar los elementos de la arquitectura de red empresarial en la red que ya tenemos funcionando.
