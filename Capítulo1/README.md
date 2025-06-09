@@ -2,7 +2,6 @@
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de: 
-
 - Comprender el concepto y las características generales de una red de comunicaciones.  
 - Identificar los componentes más utilizados en una red. 
 - Visualizar las funciones básicas de una red.  
@@ -26,6 +25,12 @@ Al finalizar la práctica, serás capaz de:
 | RTR-IND-1       | Router / Núcleo        | G0/0: 172.16.1.17/30<br>G0/1: 172.16.1.13/30         | N/A                                     |
 | RTR-IND-2       | Router / Default Gateway | G0/1: 172.16.1.14/30<br>G0/2: 10.10.50.1/24        | N/A                                     |
 | RTR-IND-3       | Router / Default Gateway | G0/0: 172.16.1.18/30<br>G0/1: 10.10.60.1/24                               | N/A                                     |
+
+---
+
+**[Lista General](https://netec-mx.github.io/TPRACT_PROT_COM/)** | **[Siguiente ➡️](https://netec-mx.github.io/TPRACT_PROT_COM/Cap%C3%ADtulo2/)**
+
+---
 
 ## Instrucciones:
 
