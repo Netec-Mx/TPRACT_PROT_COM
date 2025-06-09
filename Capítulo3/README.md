@@ -30,6 +30,11 @@ Al finalizar la práctica, serás capaz de:
 | RTR-IND-3        | Router / Default Gateway / (Distribución) | G0/0: 172.16.1.18/30<br>G0/1: 10.10.60.1/24                                          | N/A                                         |
 | RTR-OFFICE       | Router / Default Gateway / (Distribución) | G0/1: 192.168.1.1/24<br>G0/2: 192.168.1.2/24                                         | N/A                                         |
 
+---
+
+**[⬅️ Atrás](https://netec-mx.github.io/TPRACT_PROT_COM/Cap%C3%ADtulo2/)** | **[Lista General](https://netec-mx.github.io/TPRACT_PROT_COM/)** | **[Siguiente ➡️](https://netec-mx.github.io/TPRACT_PROT_COM/Cap%C3%ADtulo4/)**
+
+---
 
 ## Instrucciones: 
 
